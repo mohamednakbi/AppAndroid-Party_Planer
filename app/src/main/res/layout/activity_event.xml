@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="7dp"
+    tools:context=".Event"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/party_planner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/risque"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/yellow"
+            android:textSize="36sp" />
+        <TextView
+            android:id="@+id/urEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="Your Event"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/mTitle"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/mEvVenue"
+                android:text="venue"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/mEvMAX"
+                android:text="Max Participant"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/mEvDate"
+                android:text="Date"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/mEvTime"
+                android:text="Time"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="161dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_btn"
+                android:text="Cancel"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

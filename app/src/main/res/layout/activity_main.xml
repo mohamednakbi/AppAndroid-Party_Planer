@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/party_planner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/risque"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/yellow"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/screen_1"
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:background="@drawable/splash_screen" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="7dp"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée."
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+    <Button
+        android:id="@+id/btn_getStarted"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_btn"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="Get Started" />
+
+</LinearLayout>
+

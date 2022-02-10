@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/party_planner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/risque"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loginAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/login_animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1F1F1"
+            android:ems="10"
+            android:hint="@string/user_name"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:paddingEnd="12dp"
+            android:text="borhen.fatnassi@esprit.tn" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:passwordToggleContentDescription="password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/red"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1F1F1"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:paddingEnd="12dp"
+            android:text="alpha" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/forgot_pass"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/reem_kufi"
+            />
+
+        <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_border"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:text="Sign In"
+            />
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/reem_kufi"
+
+        />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        android:fontFamily="@font/reem_kufi"
+
+        />
+
+</LinearLayout>
+
+
+</LinearLayout>

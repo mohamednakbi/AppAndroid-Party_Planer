@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--FILE HEADER COMMENT-->
+<!--FILE            : activity_user.xml-->
+<!--PROJECT         : A-01 : Mobile App Party Planner - OnlyPlans (PROG3150)-->
+<!--FIRST VERSION   : 2021-02-13 (Rev.01)-->
+<!--AUTHORS         : Group 9 - Dusan Sasic, Devin Caron, Cole Spehar, Kevin Downer-->
+<!--DESCRIPTION     : Displays party hat images and other fetch details for the theme listview-->
+
+<resources>
+    <!--Overall Custom Look Theme for Party Planner-->
+    <style name="myTextStyle" parent="@android:style/Theme">
+        <item name="android:layout_width">
+            match_parent
+        </item>
+        <item name="android:layout_height">
+            wrap_content
+        </item>
+        <item name="android:gravity">
+            left
+        </item>
+        <item name="android:textSize">
+            20sp
+        </item>
+        <item name="android:textColor">
+            #173852
+        </item>
+        <item name="android:typeface">
+            serif
+        </item>
+        <item name="android:fontFamily">
+           // @font/cairo_bold
+        </item>
+    </style>
+
+    <!--Specific exception to Custom theme for font style-->
+    <style name="myTextStyle.CairoSB">
+        <item name="android:fontFamily">
+           // @font/cairo_semibold
+        </item>
+    </style>
+</resources>

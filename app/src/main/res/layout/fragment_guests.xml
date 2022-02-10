@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".homeFragment.GuestsFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/party_planner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/risque"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/yellow"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+<ScrollView
+    style="@style/myTextStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateParty"
+    android:layout_gravity="center"
+    >
+
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/cardview_default_elevation"
+    android:padding="80dp"
+    >
+
+    <TextView
+        android:id="@+id/etxt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:hint="Party Name"
+        android:minHeight="48dp"
+        android:singleLine="true"
+
+        android:textAlignment="center"
+        android:textColor="@color/green" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:background="@color/white"
+        >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:text="TextView"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/People"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Max Guests"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:textColor="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Entry Fee: $0"
+        android:textAlignment="center" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            style="@style/myTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:textColor="@color/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/drinksNonAlc"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox5" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox6" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox7" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/checkBox8"
+                android:textColor="@color/green" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/myTextStyle"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView"
+                android:textColor="@color/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/drinksAlc"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:text="@string/checkBox" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox2" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:textColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox3" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:textColor="@color/green"
+                android:shadowColor="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox4" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_marginTop="50dp"
+        >
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="@string/clearDrinks"
+            android:layout_marginRight="8dp"/>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:text="@string/submitDrinks"
+        android:layout_marginLeft="8dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

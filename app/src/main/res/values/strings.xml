@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Party Planner</string>
+    <string name="forgot_pass">Forgot Password ?</string>
+    <!-- strings.xml -->
+    <string name="user_name">User name</string>
+    <string name="password">password</string>
+    <string name="edit">Edit</string>
+    <string name="don_t_have_an_account">Don\'t Have an account ?  </string>
+    <string name="sign_up">Sign Up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="drinksAlc">Alcoholic</string>
+    <string name="drinksNonAlc">Non-Alcoholic</string>
+    <string name="checkBox">Whisky</string>
+    <string name="checkBox2">Vodka</string>
+    <string name="checkBox3">Beer</string>
+    <string name="checkBox4">Wine</string>
+    <string name="checkBox5">Pop</string>
+    <string name="checkBox6">Juice</string>
+    <string name="checkBox7">Water</string>
+    <string name="checkBox8">Soda</string>
+    <string name="submitDrinks">Submit</string>
+    <string name="clearDrinks">Clear</string>
+    <string name="email">Email</string>
+    <string-array name="numbers">
+
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+    </string-array>
+
+</resources>

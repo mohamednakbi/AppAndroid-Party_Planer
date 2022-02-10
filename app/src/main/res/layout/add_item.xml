@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/POPUPTITLE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/red"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add the Event Information"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etEvent_title"
+            android:hint="Event Title"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etVenue"
+            android:hint="Venue "
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etMax_participant"
+            android:hint="Max Participant "
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shape_background"
+            android:hint="Date : --/--/----"
+            android:padding="15dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTime"
+            android:hint="Time "
+            android:inputType="time"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
